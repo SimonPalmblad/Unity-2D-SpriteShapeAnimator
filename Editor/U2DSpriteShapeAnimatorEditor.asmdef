@@ -1,0 +1,19 @@
+{
+    "name": "U2DSpriteShapeAnimatorEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:caccfbdb442cdc64fa722b4c5585521f",
+        "GUID:6e3bd39fb8fbdb148b78b290dcc8eade"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

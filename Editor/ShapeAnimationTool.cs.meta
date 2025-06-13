@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 124f621ddf589644e9c369d7f095ea20
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_Target: {instanceID: 0}
+  - iconTex: {fileID: 2800000, guid: 729b3d6660ced25489e6b5186a90af4b, type: 3}
+  - handleIconStart: {fileID: 2800000, guid: eb425809a04bf104e9d97bcf5ded08de, type: 3}
+  - handleIconMiddle: {fileID: 2800000, guid: 537f88e7ceb450246bf4822f20e981b7, type: 3}
+  - handleIconEnd: {fileID: 2800000, guid: aad76c03bc05f8d498933d906f936f48, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
