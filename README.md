@@ -17,6 +17,7 @@ In the current implementation of the *2D Sprite Shape*, it's impossible to anima
 
  > [!IMPORTANT]
  > The package does currently not have support for changing spline tangents. This may or may not be included in a future update.
+<br>
 
 # Adding Sprite Shape Animators to your project
 **Import package, etc.**
@@ -43,6 +44,7 @@ A Sprite Shape Animator needs two parts: a main GameObject with the SpriteShapeA
 
 <img src="https://github.com/user-attachments/assets/eb403323-2791-4612-85e6-7d6e70cedaff" alt="Sprite Shape context tool" width="300"/>
 <br>
+<br>
 
 # Animating SpriteShapes in the Animator
 
@@ -63,10 +65,15 @@ After you have set up your SpriteShapeAnimator, you can now freely use the conte
 
 # Sprite Shape Animator Options
 An overview of the options available in a Sprite Shape Animator.
- <img src="https://github.com/user-attachments/assets/75a9256f-28fe-4592-b385-ac3824968cbc" alt="Sprite Shape Animator options" width="400"/>
-
+<br>
+<img src="https://github.com/user-attachments/assets/75a9256f-28fe-4592-b385-ac3824968cbc" alt="Sprite Shape Animator options" width="400"/>
+<br>
 |Option|Description|
 | --------------------------------- | --------------------------------------------------------------------------|
 | **bool** Auto Match Spline Points | Will check to see if any the Joints on this object match the spline points. If any points are removed or added, they will automatically be created on the object. |
 | **button** Populate From Points   | Adds or removes Joints from the SpriteShapeAnimator, reflecting the SpriteShape's spline points.                                                                  |
 | **button** Remove All Joints      | Removes all Joints from the scene.                                                                                                                                |
+
+<br>
+ > [!WARNING]
+ > Having Auto Match Spline Points enabled while working on an animation is not recommended. Use it to set up your object before creating animations, as it will result in unwanted behaviour if you add or remove spline points to an already finished animation. 
