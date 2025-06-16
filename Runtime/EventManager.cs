@@ -8,7 +8,7 @@ namespace U2DSpriteShapeAnimator.Internals
 
     public abstract class EventManager : MonoBehaviour
     {
-        private List<ISubscriber> _subscribers;
+        private List<ISubscriber> _subscribers;        
         private List<Subject> _subjects;
 
         protected EventManager()

@@ -11,7 +11,7 @@ using System;
 #if UNITY_EDITOR
 namespace U2DSpriteShapeAnimation.Internals
 {
-    [EditorTool("Shape Point Editor ", typeof(SpriteShapeAnimatorController))]
+    [EditorTool("Shape Point Editor ", typeof(SpriteShapeAnimator))]
     public class ShapeAnimationTool : EditorTool
     {
         #region Icons
@@ -35,7 +35,7 @@ namespace U2DSpriteShapeAnimation.Internals
         SerializedProperty m_ControlPoints;
 
         private GUIStyle centeredStyle;
-        private SpriteShapeAnimatorController myTarget;
+        private SpriteShapeAnimator myTarget;
 
         public void OnEnable()
         {
@@ -60,7 +60,7 @@ namespace U2DSpriteShapeAnimation.Internals
         {
             if (!target)
                 return;
-            myTarget = (SpriteShapeAnimatorController)target;
+            myTarget = (SpriteShapeAnimator)target;
 
             serializedController = new SerializedObject(myTarget.Controller);
             m_Spline = serializedController.FindProperty("m_Spline");

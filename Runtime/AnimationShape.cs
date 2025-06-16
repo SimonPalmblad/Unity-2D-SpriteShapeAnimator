@@ -27,7 +27,7 @@ namespace U2DSpriteShapeAnimator.Runtime
 
             if (pointIndex > Controller.spline.GetPointCount() - 1)
             {
-                Debug.LogWarning($"Point Index {pointIndex} is out of range of spline points bound ({controller.spline.GetPointCount()}).");
+                //Debug.LogWarning($"Point Index {pointIndex} is out of range of spline points bound ({controller.spline.GetPointCount()}).");
                 return;
             }
 
