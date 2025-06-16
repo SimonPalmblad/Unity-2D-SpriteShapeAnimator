@@ -1,5 +1,5 @@
 {
-  "name": "com.simonpalmblad.2Dspriteshapeanimator",
+  "name": "com.simonpalmblad.2dspriteshapeanimator",
   "version": "1.0.0",
   "displayName": "2D Sprite Shape Animator",
   "description": "This package extends the Unity 2D Sprite Shape package by adding the ability to animate spline shape points in the Animator timeline.",
