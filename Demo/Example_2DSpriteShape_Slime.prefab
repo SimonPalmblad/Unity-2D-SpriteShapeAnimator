@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 6931567396779640938}
   - component: {fileID: 5020763988127058585}
   m_Layer: 0
-  m_Name: 2DSpriteShapeSlime
+  m_Name: Example_2DSpriteShape_Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

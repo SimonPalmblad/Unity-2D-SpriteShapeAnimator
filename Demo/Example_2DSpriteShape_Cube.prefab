@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5001364867906991067}
   - component: {fileID: 8436491126400347561}
   m_Layer: 0
-  m_Name: 2DSpriteShape_Cube
+  m_Name: Example_2DSpriteShape_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

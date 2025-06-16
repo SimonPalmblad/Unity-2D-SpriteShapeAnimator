@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5315646855070861302}
   - component: {fileID: 3993295747641559000}
   m_Layer: 0
-  m_Name: 2DSpriteShapeWave
+  m_Name: Example_2DSpriteShape_Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
