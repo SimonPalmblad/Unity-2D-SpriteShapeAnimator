@@ -11,7 +11,9 @@ In the current implementation of the *2D Sprite Shape*, it's impossible to anima
 
 <details open>
 <summary><b>You can now do stuff like this!</b></summary>
-<img src="https://github.com/user-attachments/assets/39640b9a-1576-4ea9-96da-f81bec51a90b" alt="drawing" width="300"/>
+<img src="https://github.com/user-attachments/assets/39640b9a-1576-4ea9-96da-f81bec51a90b" alt="drawing" width="300" maxheight="300"/>
+<img src="https://github.com/user-attachments/assets/f27805fb-20ee-41da-814a-c247b296d669" alt="drawing" width="300" maxheight="300"/>
+<img src="https://github.com/user-attachments/assets/6148617a-60da-4dd3-b321-1acded13d874" alt="drawing" width="300" maxheight="300"/>
 </details>
 <br>
 
@@ -71,9 +73,12 @@ An overview of the options available in a Sprite Shape Animator.
 |Option|Description|
 | --------------------------------- | --------------------------------------------------------------------------|
 | **bool** Auto Match Spline Points | Will check to see if any the Joints on this object match the spline points. If any points are removed or added, they will automatically be created on the object. |
+| **bool** Auto Rename              | This will re-number the Joints based on what position they are.
 | **button** Populate From Points   | Adds or removes Joints from the SpriteShapeAnimator, reflecting the SpriteShape's spline points.                                                                  |
 | **button** Remove All Joints      | Removes all Joints from the scene.                                                                                                                                |
 
 <br>
- > [!WARNING]
- > Having Auto Match Spline Points enabled while working on an animation is not recommended. Use it to set up your object before creating animations, as it will result in unwanted behaviour if you add or remove spline points to an already finished animation. 
+
+> [!WARNING]
+> Having Auto Match Spline Points enabled while working on an animation is not recommended. Use it to set up your object before creating animations, as it will result in unwanted behaviour if you add or remove spline points to an already finished animation.
+> If you have renamed your Joints to something different than their default name, there are less issues when using this approach. Just make sure to have Auto Rename **disabled**.
