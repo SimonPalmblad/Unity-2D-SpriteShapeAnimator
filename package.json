@@ -5,13 +5,13 @@
   "description": "This package extends the Unity 2D Sprite Shape package by adding the ability to animate spline shape points in the Animator timeline.",
   "unity": "6000.0.50f1",
   "dependencies": {
-    "com.unity.2d.spriteshape": "10.0.7",
+    "com.unity.2d.spriteshape": "10.0.7"
   },
   "keywords": [
     "2D Sprite Shape"
   ],
   "author": {
     "name": "Simon Palmblad",
-    "email": "simon.palmblad@gmail.com",
+    "email": "simon.palmblad@gmail.com"
   }
 }
