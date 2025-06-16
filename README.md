@@ -11,7 +11,7 @@ In the current implementation of the *2D Sprite Shape*, it's impossible to anima
 
 <details open>
 <summary><b>You can now do stuff like this!</b></summary>
-<img src="https://www.dropbox.com/scl/fi/7j0tmtz0s0tky173pwqj2/Animator_Example_1.gif?rlkey=nnclrvgg2qu74piyflm7b2jzu&st=17oawkpq&dl=0" alt="drawing" width="300"/>
+<img src="https://github.com/user-attachments/assets/39640b9a-1576-4ea9-96da-f81bec51a90b" alt="drawing" width="300"/>
 </details>
 <br>
 
@@ -19,12 +19,46 @@ In the current implementation of the *2D Sprite Shape*, it's impossible to anima
  > The package does currently not have support for changing spline tangents. This may or may not be included in a future update.
 
 ## How it works
-Setting up animated sprite shapes is relatively straight forward. 
-1. You will need a `SpriteShapeAnimatorController` on a GameObject. 
+### Adding Sprite Shape Animators to your project
+
+**Using the context menu**
+<br>
+The package adds two new Sprite Shape options to the Unity GameObject context menu: `Open Sprite Shape Animator` and `Closed Sprite Shape Animator`.
+-  Right-click anywhere in Hierarchy.
+-  `2D Object` -> `Sprite Shape` -> `Open Sprite Shape Animator` or `Closed Sprite Shape Animator`.
+
+**Creating it yourself**
+<br>
+If you don't want to use the premade options from the context menu, setting up animated sprite shapes is relatively straight forward. 
+A Sprite Shape Animator needs two parts: a main GameObject with the SpriteShapeAnimator script and Animator compontents attached. A child object with the following components: a SpriteShapeRenderer, a SpriteShapeController, and an AnimationShape.
+1. Create an Empty GameObject and attach a `SpriteShapeAnimator` and an `Animator` component.
+
 2. Create a Sprite Shape via the Unity right-click context menu: 
    - `2D Object` -> `Sprite Shape` -> `Open Shape` or `Closed Shape`.
-3. Set your SpriteShapeAnimatorController as the parent of your newly created Sprite Shape.
-4. 
+   - Attach an `AnimationShape` component.
 
-SpriteShapeController
- -> 2DSpriteShape 
+3. Set your `SpriteShapeAnimator` as the parent of your newly created Sprite Shape.
+
+4. Use 'Populate From Points', or enable the 'Auto Match To Spline' option to create the dummy GameObjects that represent each spline point.
+
+5. You can now move your spline points by selecting the SpriteShapeAnimator object and using the context tool.
+![image](https://github.com/user-attachments/assets/eb403323-2791-4612-85e6-7d6e70cedaff)
+
+
+### Animating SpriteShapes in the Animator
+
+ > [!IMPORTANT]
+ > While in the Editor, animations are only played if the GameObject with the SpriteShapeAnimator is selected.
+
+After you have set up your SpriteShapeAnimator, you can now freely use the context tool to animate any motion in the Unity Animation timeline.
+- Create a new AnimationClip.
+- Enable Record on the clip.
+- Enable the Shape Point Context tool.
+- Record your animation by moving the points via the context tool.
+
+<details open>
+ <summary>An example of animating a Sprite Shape</summary>
+ <img src="https://github.com/user-attachments/assets/4f1eeb33-533f-4391-99a3-63973ca8c0d3" alt="Example of SpriteShape animation" width="800"/>()
+</details>
+<br>
+
